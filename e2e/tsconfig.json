@@ -1,0 +1,23 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../out-tsc/e2e",
+    "module": "commonjs",
+    "target": "es2018",
+    "types": [
+      "jasmine",
+      "node"
+    ],
+    "paths": {
+      "@page/*": [
+        "e2e/src/Pages/*"
+      ],
+      "@core/*": [
+        "e2e/src/Core/*"
+      ],
+      "@data/*": [
+        "e2e/src/Resources/TestData/*"
+      ]
+    }
+  }
+}

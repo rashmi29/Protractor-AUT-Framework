@@ -1,0 +1,33 @@
+{
+  "name": "protractor-angular-automation",
+  "version": "0.0.0",
+  "scripts": {
+    "e2e:QAregression": "webdriver-manager update && protractor e2e/protractor.conf.js --params.environment.env=QA --suite regression",
+    "e2e:QAsmoke": "webdriver-manager update && protractor e2e/protractor.conf.js --params.environment.env=QA --suite smoke"
+  },
+  "private": true,
+  "dependencies": {
+    "crypto-js": "^4.0.0",
+    "exceljs": "^4.2.0",
+    "faker": "^5.1.0",
+    "log4js": "^6.3.0",
+    "nodemailer": "^6.4.17",
+    "protractor-beautiful-reporter": "^1.3.6",
+    "tsconfig-paths": "^3.9.0",
+    "zip-a-folder": "0.0.12"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^16.2.1",
+    "@angular/cli": "^16.2.1",
+    "@angular/compiler-cli": "~11.0.3",
+    "@types/jasmine": "~3.6.0",
+    "@types/node": "^12.11.1",
+    "codelyzer": "^0.0.28",
+    "jasmine-core": "~3.6.0",
+    "jasmine-spec-reporter": "~5.0.0",
+    "protractor": "^3.3.0",
+    "ts-node": "~8.3.0",
+    "tslint": "~6.1.0",
+    "typescript": "~4.0.2"
+  }
+}
